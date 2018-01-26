@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=300">
+	<meta name="viewport" content="width=device-width">
 	<title>Document</title>
 	<style>
 		*{
@@ -33,11 +33,13 @@
 	<div class="box"></div>
 	<div class="box"></div>
 	<div class="box"></div>
+	<p class=width></p>
+	<p class="ratio"></p>
 	<script>
-		console.log(window);
-		console.dir(document);
-		console.dir(document.documentElement);
-		console.dir(document.body);
+		var oWidth=document.querySelector('.width');
+		var oRatio=document.querySelector('.ratio');
+		oWidth.innerHTML=window.innerWidth;
+		oRatio.innerHTML=window.devicePixelRatio;
 	</script>
 </body>
 </html>
